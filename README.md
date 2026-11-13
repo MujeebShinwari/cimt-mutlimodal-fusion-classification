@@ -37,7 +37,7 @@ Python 3.10 and a CUDA-capable GPU are recommended. Training the RETFound branch
 
 The data and weights are not included in this repository.
 
-1. **Dataset.** Download the public CIMT fundus dataset used in the paper ([dataset reference]) and arrange it as:
+1. **Dataset.** Download the public CHINA CIMT fundus dataset and arrange it as:
 
    ```
    data/
@@ -102,6 +102,3 @@ This fits the meta-learner on every subset of modalities, evaluates it on the te
 - GPU kernels are not fully deterministic, so retraining can change the metrics slightly. The meta-learner is deterministic given the base-learner probabilities.
 - The meta-learner regularization (`META_LEARNER_C = 1.0`) is the scikit-learn default and is not tuned.
 
-## License
-
-MIT, see `LICENSE`.
