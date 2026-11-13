@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.idea/
+.vscode/
+.DS_Store
+
+# data, weights and outputs are not tracked
+data/
+results/
+*.pth
+*.pt
+*.pkl
+*.xlsx
+*.log
